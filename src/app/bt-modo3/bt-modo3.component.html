@@ -1,0 +1,52 @@
+<form [formGroup]="bezingerForm">
+    <div class="contenedor">
+        <h2>MODO III (Hemisferio frontal derecho)</h2>
+        <p>El modo III es visual, espacial, y no verbal. Es metafórico y conceptual, y expresa fotos o
+           “películas” internas que al pensador del modo III le encanta “ver”, lo que le convierte de modo
+           natural en maestro de la integración, la innovación, y la imaginación. Se aburre fácilmente y
+           busca constantemente la estimulación de nuevos conceptos, nuevas aventuras e información. Se
+           le identifica con facilidad por su modo de archivar documentos de trabajo e información, ya que
+           es visual: almacena el material en montones que va haciendo por toda la casa u oficina y que
+           conserva siempre a la vista. También se le distingue por su peculiar y a veces especial sentido
+           del humor. Como “altruista conceptual”, el pensador del modo III se interesa por la humanidad
+           y su evolución, aunque quizás no sea un gran adepto a las relaciones de tu a tu.
+            
+
+           Ahora, en una escala de 0 (en absoluto) a 5 (completamente), califíquese según lo 
+           identificado que se sienta usted con lo que dice este párrafo, tomado como una posible 
+           descripción de usted mismo. Escriba este número aquí:</p>
+           <h2>Parte A:</h2><input type="number" formControlName="parteA">
+
+        <br>
+        <br>
+        
+        <p>A continuación, lea las siguientes 15 frases, y ponga una señal en aquellas que le 
+            describen mucho a usted. Deje en blanco aquellas otras que no le son aplicables o que 
+            solo le describen en parte.</p>
+        
+        <p>1. Me concentro más en la perspectiva general que en los “mezquinos” detalles, tales como la ortografía o el saldo de mi cuenta corriente.</p><input type="checkbox" formContrloName="frase1">
+        <p>2. Se me ocurren habitualmente ideas innovadoras y soluciones creativas. </p><input type="checkbox" formContrloName="frase2">
+        <p>3. Se me reconoce como una persona muy expresiva y con mucha energía.</p><input type="checkbox" formContrloName="frase3">
+        <p>4. Me disgustan claramente las tareas o actividades rutinarias y me aburro enseguida con ellas. </p><input type="checkbox" formContrloName="frase4">
+        <p>5. Destaco en sintetizar ideas o distintos temas en “un todo” nuevo. </p><input type="checkbox" formContrloName="frase5">
+        <p>6. Prefiero trabajar en varias cosas de forma simultánea, procesando muchas ideas y tareas al mismo tiempo.</p><input type="checkbox" formContrloName="frase6">
+        <p>7. Considero que la novedad, la originalidad y la evolución son los valores más importantes. </p><input type="checkbox" formContrloName="frase7">
+        <p>8. Encuentro fácilmente la información que busco en las pilas de papeles que organizo en mi casa y mi oficina.</p><input type="checkbox" formContrloName="frase8">
+        <p>9. Utilizo metáforas y analogías visuales para explicar lo que pienso a los demás.</p><input type="checkbox" formContrloName="frase9">
+        <p>10. Me entusiasmo con las ideas novedosas o curiosas de los demás.</p><input type="checkbox" formContrloName="frase10">
+        <p>11. A la hora de resolver problemas, confío en los presentimientos y en mi intuición.</p><input type="checkbox" formContrloName="frase11">
+        <p>12. Tengo un sentido del humor que me ha llevado alguna vez a tener problemas por no comportarme adecuadamente.</p><input type="checkbox" formContrloName="frase12">
+        <p>13. Alguna de mis mejores ideas surgen mientras “no estoy haciendo nada en particular”.</p><input type="checkbox" formContrloName="frase13">
+        <p>14. He desarrollado muy bien mis habilidades relacionadas con el espacio, y puedo “ver” fácilmente como reorganizar una habitación, rehacer una maleta, o bien organizar el baúl del coche de modo que todo quepa perfectamente. </p><input type="checkbox" formContrloName="frase14">
+        <p>15. go talento artístico.</p><input type="checkbox" formContrloName="frase15">
+        
+        <p>Para calcular su resultado de la parte B, cuente el número de señales que ha puesto más arriba, y concédase un (1) punto por cada una de ellas. Escriba su total aquí:</p>
+        <h2>Parte B:</h2><input type="number" formContrloName="parteB">
+        <p>Ahora sume los resultados de la parte A y la parte B y escriba el total abajo:</p>
+        <h2>TOTAL MODO I RESULTADO:</h2><input type="number" formContrloName="total">      
+    </div>
+</form>
+
+<pre>
+    {{ bezingerForm.value | json }}
+</pre>
