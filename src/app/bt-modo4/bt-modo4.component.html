@@ -1,49 +1,74 @@
-<form>
-    <div class="contenedor">
-        <h2>MODO IV (Hemisferio frontal izquierdo)</h2>
-        <p>El pensamiento del modo IV es lógico y matemático, y destaca en el análisis crítico, la
-           resolución de problemas de diagnóstico y en el uso de las máquinas y herramientas. Los
-           pensadores del modo IV tienen metas bien definidas, la capacidad de diseñar estrategias más
-           eficientes y productivas para cualquier situación. Esto les lleva a alcanzar posiciones de
-           liderazgo desde las que pueden tomar decisiones clave y gestionar las circunstancias para poder
-           hacerlas converger con los resultados deseados. Dada su habilidad para ser críticos precisos, no
-           es de extrañar que prefieran trabajos técnicos, mecánicos o financieros.
-             
-           Ahora, en una escala de 0 (en absoluto) a 5 (completamente), califíquese según lo 
-           identificado que se sienta usted con lo que dice este párrafo, tomado como una posible 
-           descripción de usted mismo. Escriba este número aquí:</p>
-           <h2>Parte A:</h2><input type="number" [formGroup]="bezingerForm">
+<body>
 
-        <br>
-        <br>
-        
-        <p>A continuación, lea las siguientes 15 frases, y ponga una señal en aquellas que le 
-            describen mucho a usted. Deje en blanco aquellas otras que no le son aplicables o que 
-            solo le describen en parte.</p>
-        
-        <p>1. Prefiero trabajar en temas técnicos o financieros.</p><input type="radio" >
-        <p>2. Me gusta el pensamiento crítico y analítico.</p><input type="radio" >
-        <p>3. Tengo buenas habilidades para resolver problemas técnicos y de diagnóstico.</p><input type="radio">
-        <p>4. Destaco en el estudio de las ciencias, finanzas, matemáticas y lógica.</p><input type="radio">
-        <p>5. Me doy cuenta de que disfruto y me crezco en debates y disputas verbales.</p><input type="radio">
-        <p>6. Destaco en entender el funcionamiento de máquinas y disfruto de usar herramientas y construir o reparar cosas.</p><input type="radio">
-        <p>7. Prefiero tener la responsabilidad final a la hora de tomar decisiones y fijar prioridades.</p><input type="radio">
-        <p>8. Considero que pensar, es significativamente más importante que sentir.</p><input type="radio">
-        <p>9. Realizar inversiones, y administrar y potenciar recursos clave como el tiempo y el dinero, es algo en lo que destaco.</p><input type="radio">
-        <p>10. Me considero, básicamente, un pensador lógico.</p><input type="radio">
-        <p>11. Destaco en delegando y dando ordenes.</p><input type="radio">
-        <p>12. Suelo organizar documentos, datos e información, de acuerdo a puntos clave a tener en cuenta y a principios operativos.</p><input type="radio">
-        <p>13. Mido mi éxito en función de los resultados reales que obtengo y por el “beneficio neto” que consigo.</p><input type="radio">
-        <p>14. Me considero un líder capaz, decisorio y eficaz.</p><input type="radio">
-        <p>15. Valoro la efectividad y la racionalidad por encima de todo lo demás.</p><input type="radio">
-        
-        <p>Para calcular su resultado de la parte B, cuente el número de señales que ha puesto más arriba, y concédase un (1) punto por cada una de ellas. Escriba su total aquí:</p>
-        <h2>Parte B:</h2><input type="number">
-        <p>Ahora sume los resultados de la parte A y la parte B y escriba el total abajo:</p>
-        <h2>TOTAL MODO IV RESULTADO:</h2><input type="number">
+    <div>
+        <div>
+            <div class="background">
+                <h1 class="style">Test de Bezinger</h1>
+            </div>
+            <div class="style2">
+                <h3>Conozca su particular "paquete" de talentos naturales</h3>            
+                <h5>Determine cuales son sus dominancias y subdominancias cerebrales, y las actividades laborales en las que en principio estas pueden florecer.</h5>
+            </div>
+        </div>
+   
+            <div class="style3">
+                <h2>MODO IV</h2>  
+                <h4>Parte A:</h4>                 
+                <p>El pensamiento del modo IV es lógico y matemático, y destaca en el análisis crítico, la
+                    resolución de problemas de diagnóstico y en el uso de las máquinas y herramientas. Los
+                    pensadores del modo IV tienen metas bien definidas, la capacidad de diseñar estrategias más
+                    eficientes y productivas para cualquier situación. Esto les lleva a alcanzar posiciones de
+                    liderazgo desde las que pueden tomar decisiones clave y gestionar las circunstancias para poder
+                    hacerlas converger con los resultados deseados. Dada su habilidad para ser críticos precisos, no
+                    es de extrañar que prefieran trabajos técnicos, mecánicos o financieros.</p>
+                <p>Ahora, en una escala de 0 (en absoluto) a 5 (completamente), califíquese según lo 
+                    identificado que se sienta usted con lo que dice este párrafo, tomado como una posible 
+                    descripción de usted mismo.</p>
+            
+                    <form>
+                    <p><label for="check0">Escriba este número aquí:<input type="number" formControlName="parteA" class="inputClaseA" id="check0"></label></p>
+                    </form>
+               
+         
+                <h4>Parte B:</h4> 
+                <p>A continuación, lea las siguientes 15 frases, y ponga una señal en aquellas que le 
+                    describen mucho a usted. Deje en blanco aquellas otras que no le son aplicables o que 
+                    solo le describen en parte.</p>
+                <div class="contMod1ParteB">   
+                <form action="#"> 
+                    <p><input type="checkbox" formControlName="frase1" id="check1">  
+                       <label for="check1"> 1. Prefiero trabajar en temas técnicos o financieros.</label></p>
+                    <p><input type="checkbox" formControlName="frase2" id="check2">
+                       <label for="check2">2. Me gusta el pensamiento crítico y analítico.</label></p>
+                    <p><input type="checkbox" formControlName="frase3" id="check3">
+                       <label for="check3">3. Tengo buenas habilidades para resolver problemas técnicos y de diagnóstico.</label></p>
+                    <p><input type="checkbox" formControlName="frase4" id="check4">
+                       <label for="check4">4. Destaco en el estudio de las ciencias, finanzas, matemáticas y lógica.</label>
+                    <p><input type="checkbox" formControlName="frase5" id="check5">
+                       <label for="check5">5. Me doy cuenta de que disfruto y me crezco en debates y disputas verbales.</label></p>
+                    <p><input type="checkbox" formControlName="frase6" id="check6">
+                       <label for="check6">6. Destaco en entender el funcionamiento de máquinas y disfruto de usar herramientas y construir o reparar cosas.</label>
+                    <p><input type="checkbox" formControlName="frase7" id="check7">
+                       <label for="check7">7. Prefiero tener la responsabilidad final a la hora de tomar decisiones y fijar prioridades.</label></p>
+                    <p><input type="checkbox" formControlName="frase8" id="check8">
+                       <label for="check8">8. Considero que pensar, es significativamente más importante que sentir.</label></p>
+                    <p><input type="checkbox" formControlName="frase9" id="check9">
+                       <label for="check9">9. Realizar inversiones, y administrar y potenciar recursos clave como el tiempo y el dinero, es algo en lo que destaco.</label></p>
+                    <p><input type="checkbox" formControlName="frase10" id="check10">
+                       <label for="check10">10. Me considero, básicamente, un pensador lógico.</label></p>
+                    <p><input type="checkbox" formControlName="frase11" id="check11">
+                       <label for="check11">11. Destaco en delegando y dando ordenes.</label></p>
+                    <p><input type="checkbox" formControlName="frase12" id="check12">
+                       <label for="check12">12. Suelo organizar documentos, datos e información, de acuerdo a puntos clave a tener en cuenta y a principios operativos.</label></p>
+                    <p><input type="checkbox" formControlName="frase13" id="check13">    
+                       <label for="check13">13. Mido mi éxito en función de los resultados reales que obtengo y por el “beneficio neto” que consigo.</label></p>
+                    <p><input type="checkbox" formControlName="frase14" id="check14">
+                       <label for="check14">14. Me considero un líder capaz, decisorio y eficaz.</label></p>
+                    <p><input type="checkbox" formControlName="frase15" id="check15">
+                        <label for="check15">15. Valoro la efectividad y la racionalidad por encima de todo lo demás.</label></p>
+                </form>
+                </div>
+            </div> 
     </div>
-</form>
+</body>
 
-<pre>
-    {{ bezingerForm.value | json }}
-</pre>

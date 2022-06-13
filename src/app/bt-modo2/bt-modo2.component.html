@@ -1,51 +1,77 @@
-<form [formGroup]="bezingerForm">
-    <div class="contenedor">
-        <h2>MODO II (Hemisferio posterior derecho)</h2>
-        <p>La manera de pensar del Modo II es espiritual y basada en simbolismos y sentimientos. Se da
-            cuenta de las sutilezas y cambia a otros estados de ánimo, emociones y señales no verbales. Los
-            pensadores fuertes en el modo II, a menudo son altamente expresivos, buscan instintivamente el
-            bienestar, y estimulan y conectan con los demás a través de palabras y gestos. Preocupados por
-            los demás por naturaleza, creen que la manera como se siente alguien es de extraordinaria
-            importancia, y tienen esta preocupación porque son compasivos, y buscan la relación y la
-            armonía en sus vidas personales y profesionales. Dada su habilidad para relacionarse
-            positivamente y con empatía, los pensadores según el Modo II también destacan motivando a
-            los demás a compartir su propia exaltación, entusiasmo y apoyo.
+<body>
 
-            Ahora, en una escala de 0 (en absoluto) a 5 (completamente), califíquese según lo 
-            identificado que se sienta usted con lo que dice este párrafo, tomado como una posible 
-            descripción de usted mismo. Escriba este número aquí:</p>
-            <h2>Parte A:</h2><input type="number" formControlName="parteA">
+    <div>
+        <div>
+            <div class="background">
+                <h1 class="style">Test de Bezinger</h1>
+            </div>
+            <div class="style2">
+                <h3>Conozca su particular "paquete" de talentos naturales</h3>            
+                <h5>Determine cuales son sus dominancias y subdominancias cerebrales, y las actividades laborales en las que en principio estas pueden florecer.</h5>
+            </div>
+        </div>
+   
+            <div class="style3">
+                <h2>MODO II</h2>  
+                <h4>Parte A:</h4>                 
+                <p>La manera de pensar del Modo II es espiritual y basada en simbolismos y sentimientos. Se da
+                    cuenta de las sutilezas y cambia a otros estados de ánimo, emociones y señales no verbales. Los
+                    pensadores fuertes en el modo II, a menudo son altamente expresivos, buscan instintivamente el
+                    bienestar, y estimulan y conectan con los demás a través de palabras y gestos. Preocupados por
+                    los demás por naturaleza, creen que la manera como se siente alguien es de extraordinaria
+                    importancia, y tienen esta preocupación porque son compasivos, y buscan la relación y la
+                    armonía en sus vidas personales y profesionales. Dada su habilidad para relacionarse
+                    positivamente y con empatía, los pensadores según el Modo II también destacan motivando a
+                    los demás a compartir su propia exaltación, entusiasmo y apoyo.</p>
+                <p>Ahora, en una escala de 0 (en absoluto) a 5 (completamente), califíquese según lo 
+                    identificado que se sienta usted con lo que dice este párrafo, tomado como una posible 
+                    descripción de usted mismo.</p>
+            
+                    <form>
+                    <p><label for="check0">Escriba este número aquí:<input type="number" formControlName="parteA" class="inputClaseA" id="check0"></label></p>
+                    </form>
+               
+         
+                <h4>Parte B:</h4> 
+                <p>A continuación, lea las siguientes 15 frases, y ponga una señal en aquellas que le 
+                    describen mucho a usted. Deje en blanco aquellas otras que no le son aplicables o que 
+                    solo le describen en parte.</p>
+                <div class="contMod1ParteB">   
+                <form action="#"> 
+                    <p><input type="checkbox" formControlName="frase1" id="check1">  
+                       <label for="check1"> 1. Presto especial atención, y soy muy hábil interpretando el lenguaje corporal y la comunicación no verbal.</label></p>
+                    <p><input type="checkbox" formControlName="frase2" id="check2">
+                       <label for="check2">2. Creo que los sentimientos son más verdad y más importantes que los pensamientos.</label></p>
+                    <p><input type="checkbox" formControlName="frase3" id="check3">
+                       <label for="check3">3. Disfruto "conectando" verbalmente con los demás, escuchando sus problemas y compartiendo sentimientos.</label></p>
+                    <p><input type="checkbox" formControlName="frase4" id="check4">
+                       <label for="check4">4. Me considero una persona altamente espiritual.</label>
+                    <p><input type="checkbox" formControlName="frase5" id="check5">
+                       <label for="check5">5. Me relaciono con los demás con empatía y me es fácil sentir lo que ellos sienten.</label></p>
+                    <p><input type="checkbox" formControlName="frase6" id="check6">
+                       <label for="check6">6. Soy excelente creando entusiasmo y motivando de manera positiva a los demás.</label></p>
+                    <p><input type="checkbox" formControlName="frase7" id="check7">
+                       <label for="check7">7. A menudo toco espontáneamente a otros para darles apoyo y ánimo.</label></p>
+                    <p><input type="checkbox" formControlName="frase8" id="check8">
+                       <label for="check8">8. De manera automática miro la cara de las personas con quien hablo.</label></p>
+                    <p><input type="checkbox" formControlName="frase9" id="check9">
+                       <label for="check9">9. Me encanta cantar, bailar y escuchar música.</label></p>
+                    <p><input type="checkbox" formControlName="frase10" id="check10">
+                       <label for="check10">10. Creo que el crecimiento y el desarrollo personal son extremadamente importantes.</label></p>
+                    <p><input type="checkbox" formControlName="frase11" id="check11">
+                       <label for="check11">11. Defino el éxito por la calidad de mi experiencia.</label></p>
+                    <p><input type="checkbox" formControlName="frase12" id="check12">
+                       <label for="check12">12. Considero que mis relaciones con los demás son la parte más importante de mi vida.</label></p>
+                    <p><input type="checkbox" formControlName="frase13" id="check13">    
+                       <label for="check13">13. Me siento incómodo en situaciones de conflicto.</label></p>
+                    <p><input type="checkbox" formControlName="frase14" id="check14">
+                       <label for="check14">14. Considero que la cooperación y la armonía son los valores humanos más importantes.</label></p>
+                    <p><input type="checkbox" formControlName="frase15" id="check15">
+                        <label for="check15">15. Siempre quiero saber como se siente y como se relaciona la gente.</label></p>
 
-        <br>
-        <br>
-        
-        <p>A continuación, lea las siguientes 15 frases, y ponga una señal en aquellas que le 
-            describen mucho a usted. Deje en blanco aquellas otras que no le son aplicables o que 
-            solo le describen en parte.</p>
-        
-        <p>1. Presto especial atención, y soy muy hábil interpretando el lenguaje corporal y la comunicación no verbal.</p><input type="checkbox" formControlName="frase1">
-        <p>2. Creo que los sentimientos son más verdad y más importantes que los pensamientos. </p><input type="checkbox" formControlName="frase2">
-        <p>3. Disfruto "conectando" verbalmente con los demás, escuchando sus problemas y compartiendo sentimientos.</p><input type="checkbox" formControlName="frase3">
-        <p>4. Me considero una persona altamente espiritual </p><input type="checkbox" formControlName="frase4">
-        <p>5. Me relaciono con los demás con empatía y me es fácil sentir lo que ellos sienten. </p><input type="checkbox" formControlName="frase5">
-        <p>6. Soy excelente creando entusiasmo y motivando de manera positiva a los demás.</p><input type="checkbox" formControlName="frase6">
-        <p>7. A menudo toco espontáneamente a otros para darles apoyo y ánimo. </p><input type="checkbox" formControlName="frase7">
-        <p>8. De manera automática miro la cara de las personas con quien hablo.</p><input type="checkbox" formControlName="frase8">
-        <p>9. Me encanta cantar, bailar y escuchar música.</p><input type="checkbox" formControlName="frase">
-        <p>10. Creo que el crecimiento y el desarrollo personal son extremadamente importantes.</p><input type="checkbox" formControlName="frase10">
-        <p>11. Defino el éxito por la calidad de mi experiencia.</p><input type="checkbox" formControlName="frase11">
-        <p>12. Considero que mis relaciones con los demás son la parte más importante de mi vida</p><input type="checkbox" formControlName="frase12">
-        <p>13. Me siento incómodo en situaciones de conflicto.</p><input type="checkbox" formControlName="frase13">
-        <p>14. Considero que la cooperación y la armonía son los valores humanos más importantes.</p><input type="checkbox" formControlName="frase14">
-        <p>15. Siempre quiero saber como se siente y como se relaciona la gente.</p><input type="checkbox" formControlName="frase15">
-        
-        <p>Para calcular su resultado de la parte B, cuente el número de señales que ha puesto más arriba, y concédase un (1) punto por cada una de ellas. Escriba su total aquí:</p>
-        <h2>Parte B:</h2><input type="number" formControlName="parteB">
-        <p>Ahora sume los resultados de la parte A y la parte B y escriba el total abajo:</p>
-        <h2>TOTAL MODO I RESULTADO:</h2><input type="number" formControlName="total">      
+                </form>
+                </div>
+            </div> 
     </div>
-</form>
+</body>
 
-<pre>
-    {{ bezingerForm.value | json }}
-</pre>

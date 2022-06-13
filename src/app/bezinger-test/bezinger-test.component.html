@@ -1,53 +1,75 @@
-<form [formGroup]="bezingerForm">
-    <div class="contenedor">
-        <h1>Cuestionario Bezinger</h1>
-        <h3>Conozca su particular "paquete" de talentos naturales</h3>
-        <h5>Determine cuales son sus dominancias y subdominancias cerebrales, y las actividades laborales en las que en principio estas pueden florecer.</h5>
-    
-        <h2>MODO I (Hemisferio posterior izquierdo)</h2>
-        <p>El pensamiento del Modo I es ordenado y se basa en procedimientos. Se lo distingue por su
-            habilidad de repetir una acción de manera consistente y precisa a lo largo del tiempo. Los 
-            verdaderos pensadores del modo I encuentran satisfacción y una sensación de logro en seguir 
-            rutinas y procedimientos establecidos. Son maestros en prestar atención a los detalles. Son 
-            leales y fiables cumplidores, y durante años pueden permanecer en la misma compañía, donde
-            se les valora por la consistencia en su trabajo y por la minuciosidad con que completan sus 
-            tareas. Son naturalmente conservadores, aprecian los valores tradicionales y prefieren abordar 
-            las tareas y resolver los problemas paso a paso.
-            Ahora, en una escala de 0 (en absoluto) a 5 (completamente), califíquese según lo 
-            identificado que se sienta usted con lo que dice este párrafo, tomado como una posible 
-            descripción de usted mismo. Escriba este número aquí:</p>
-            <h2>Parte A:</h2><input type="number" formControlName="parteA">
+<body>
 
-        <br>
-        <br>
-        
-        <p>A continuación, lea las siguientes 15 frases, y ponga una señal en aquellas que le 
-            describen mucho a usted. Deje en blanco aquellas otras que no le son aplicables o que 
-            solo le describen en parte.</p>
-        
-        <p>1. Destaco en que mantengo las cosas organizadas.</p><input type="checkbox" formControlName="frase1" >
-        <p>2. Me gusta dedicarme y trabajar en los detalles.</p><input type="checkbox" formControlName="frase2">
-        <p>3. Soy muy productivo, fiable y disciplinado.</p><input type="checkbox" formControlName="frase3">
-        <p>4. Disfruto de tareas tales como clasificar, archivar, planificar y rotular carpetas y archivadores.</p><input type="checkbox" formControlName="frase4">
-        <p>5. Creo que las reglas son importantes y deben cumplirse.</p><input type="checkbox" formControlName="frase5">
-        <p>6. Para trabajar prefiero guiarme por instrucciones y procedimientos específicos.</p><input type="checkbox" formControlName="frase6">
-        <p>7. Me considero conservador y tradicional.</p><input type="checkbox" formControlName="frase7">
-        <p>8. Tanto en el trabajo com en casa, me gusta tener un lugar específico para cada cosa.</p><input type="checkbox" formControlName="frase8">
-        <p>9. Utilizo métodos paso a paso para resolver problemas y abordar tareas.</p><input type="checkbox" formControlName="frase9">
-        <p>10. Me disgustan mucho la ambigüedad y la falta de previsión.</p><input type="checkbox" formControlName="frase10">
-        <p>11. Completo mis tareas de manera puntual y ordenada.</p><input type="checkbox" formControlName="frase11">
-        <p>12. Prefiero relacionarme con personas que controlen sus emociones y se comporten adecuadamente (lo que apruebo).</p><input type="checkbox" formControlName="frase12">
-        <p>13. Siempre leo las instrucciones de cabo a rabo antes de comenzar un proyecto.</p><input type="checkbox" formControlName="frase13">
-        <p>14. Disfruto de tener rutinas regulares y seguirla.</p><input type="checkbox" formControlName="frase14">
-        <p>15. Prefiero programar mi vida personal y profesional, y me molesta cuando tengo que desviarme de lo planeado.</p><input type="checkbox" formControlName="frase15">
-        
-        <p>Para calcular su resultado de la parte B, cuente el número de señales que ha puesto más arriba, y concédase un (1) punto por cada una de ellas. Escriba su total aquí:</p>
-        <h2>Parte B:</h2><input type="number" formControlName="parteB">
-        <p>Ahora sume los resultados de la parte A y la parte B y escriba el total abajo:</p>
-        <h2>TOTAL MODO I RESULTADO:</h2><input type="number" formControlName="total">
+    <div>
+        <div>
+            <div class="background">
+                <h1 class="style">Test de Bezinger</h1>
+            </div>
+            <div class="style2">
+                <h3>Conozca su particular "paquete" de talentos naturales</h3>            
+                <h5>Determine cuales son sus dominancias y subdominancias cerebrales, y las actividades laborales en las que en principio estas pueden florecer.</h5>
+            </div>
+        </div>
+     
+            <div class="style3">
+                <h2>MODO I</h2>  
+                <h4>Parte A:</h4>                 
+                <p>El pensamiento del Modo I es ordenado y se basa en procedimientos. Se lo distingue por su
+                    habilidad de repetir una acción de manera consistente y precisa a lo largo del tiempo. Los 
+                    verdaderos pensadores del modo I encuentran satisfacción y una sensación de logro en seguir 
+                    rutinas y procedimientos establecidos. Son maestros en prestar atención a los detalles. Son 
+                    leales y fiables cumplidores, y durante años pueden permanecer en la misma compañía, donde
+                    se les valora por la consistencia en su trabajo y por la minuciosidad con que completan sus 
+                    tareas. Son naturalmente conservadores, aprecian los valores tradicionales y prefieren abordar 
+                    las tareas y resolver los problemas paso a paso.</p>
+                <p>Ahora, en una escala de 0 (en absoluto) a 5 (completamente), califíquese según lo 
+                    identificado que se sienta usted con lo que dice este párrafo, tomado como una posible 
+                    descripción de usted mismo.</p>
+            
+                    <form>
+                    <p><label for="check0">Escriba este número aquí:<input type="number" formControlName="parteA" class="inputClaseA" id="check0"></label></p>
+                    </form>
+               
+         
+                <h4>Parte B:</h4> 
+                <p>A continuación, lea las siguientes 15 frases, y ponga una señal en aquellas que le 
+                    describen mucho a usted. Deje en blanco aquellas otras que no le son aplicables o que 
+                    solo le describen en parte.</p>
+                <div class="contMod1ParteB">   
+                <form action="#"> 
+                    <p><input type="checkbox" formControlName="frase1" id="check1">  
+                       <label for="check1"> 1. Destaco en que mantengo las cosas organizadas.</label></p>
+                    <p><input type="checkbox" formControlName="frase2" id="check2">
+                       <label for="check2">2. Me gusta dedicarme y trabajar en los detalles.</label></p>
+                    <p><input type="checkbox" formControlName="frase3" id="check3">
+                       <label for="check3">3. Soy muy productivo, fiable y disciplinado.</label></p>
+                    <p><input type="checkbox" formControlName="frase4" id="check4">
+                       <label for="check4">4. Disfruto de tareas tales como clasificar, archivar, planificar y rotular carpetas y archivadores.</label>
+                    <p><input type="checkbox" formControlName="frase5" id="check5">
+                       <label for="check5">5. Creo que las reglas son importantes y deben cumplirse.</label></p>
+                    <p><input type="checkbox" formControlName="frase6" id="check6">
+                       <label for="check6">6. Para trabajar prefiero guiarme por instrucciones y procedimientos específicos.</label></p>
+                    <p><input type="checkbox" formControlName="frase7" id="check7">
+                       <label for="check7">7. Me considero conservador y tradicional.</label></p>
+                    <p><input type="checkbox" formControlName="frase8" id="check8">
+                       <label for="check8">8. Tanto en el trabajo com en casa, me gusta tener un lugar específico para cada cosa.</label></p>
+                    <p><input type="checkbox" formControlName="frase9" id="check9">
+                       <label for="check9">9. Utilizo métodos paso a paso para resolver problemas y abordar tareas.</label></p>
+                    <p><input type="checkbox" formControlName="frase10" id="check10">
+                       <label for="check10">10. Me disgustan mucho la ambigüedad y la falta de previsión.</label></p>
+                    <p><input type="checkbox" formControlName="frase11" id="check11">
+                       <label for="check11">11. Completo mis tareas de manera puntual y ordenada.</label></p>
+                    <p><input type="checkbox" formControlName="frase12" id="check12">
+                       <label for="check12">12. Prefiero relacionarme con personas que controlen sus emociones y se comporten adecuadamente (lo que apruebo).</label></p>
+                    <p><input type="checkbox" formControlName="frase13" id="check13">    
+                       <label for="check13">13. Siempre leo las instrucciones de cabo a rabo antes de comenzar un proyecto.</label></p>
+                    <p><input type="checkbox" formControlName="frase14" id="check14">
+                       <label for="check14">14. Disfruto de tener rutinas regulares y seguirla.</label></p>
+                    <p><input type="checkbox" formControlName="frase15" id="check15">
+                        <label for="check15">15. Prefiero programar mi vida personal y profesional, y me molesta cuando tengo que desviarme de lo planeado.</label></p>
+                </form>
+                </div>
+            </div>
     </div>
-</form>
+</body>
 
-<pre>
-    {{ bezingerForm.value | json }}
-</pre>

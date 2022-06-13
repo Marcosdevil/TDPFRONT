@@ -8,7 +8,7 @@ import { SignupComponent } from './signup/signup.component';
 import { AdminComponent } from './admin/admin.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'; 
 import { AuthService } from './services/auth.service';
 import { AuthGuard } from './auth.guard';
 import { BezingerTestComponent } from './bezinger-test/bezinger-test.component';
