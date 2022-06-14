@@ -1,0 +1,35 @@
+body {
+    background-image: url('../../assets/images/brackGroundCorregida.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0px -100px;
+
+    width: 100%;
+    height: 729px;
+}
+
+.style {
+    color: #1c4587;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36.0pt;
+    vertical-align: baseline;
+    text-align: center;
+    padding-top: 5.5em;
+
+}
+
+a {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    cursor:pointer;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 60px;
+    color: #1c4587;
+    border: 1px solid #1c4587;
+    border-radius: 4px;
+    transition: all 400ms ease;
+    position:absolute;
+    left: calc(50% - 50px);
+}
