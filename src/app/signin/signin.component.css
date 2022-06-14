@@ -31,6 +31,7 @@
     padding: 0 0 20px;
     text-align: center;
     font-size: 22px;
+    color:#1c4587;
 }
 
 .login-box label {
@@ -60,8 +61,9 @@
     border: none;
     outline: none;
     height: 40px;
-    background: blue;
+    background: #1c4587;
     font-size: 20px;
+    color: #fff;
     border-radius: 20px;
     margin-top: 20px;
 }

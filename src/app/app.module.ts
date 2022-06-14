@@ -15,6 +15,8 @@ import { BezingerTestComponent } from './bezinger-test/bezinger-test.component';
 import { BtModo2Component } from './bt-modo2/bt-modo2.component';
 import { BtModo3Component } from './bt-modo3/bt-modo3.component';
 import { BtModo4Component } from './bt-modo4/bt-modo4.component';
+import { routing, appRoutingProviders } from './app.routing';
+import { PresentacionComponent } from './presentacion/presentacion.component';
 
 
 @NgModule({
@@ -28,15 +30,17 @@ import { BtModo4Component } from './bt-modo4/bt-modo4.component';
     BezingerTestComponent,
     BtModo2Component,
     BtModo3Component,
-    BtModo4Component
+    BtModo4Component,
+    PresentacionComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    routing,
   ],
-  providers: [AuthService, AuthGuard],
+  providers: [AuthService, AuthGuard, appRoutingProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
